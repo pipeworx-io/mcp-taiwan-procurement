@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-taiwan-procurement",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Taiwan Government Procurement MCP — 政府電子採購網 (PCC) tenders (keyless).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-taiwan-procurement": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "taiwan-procurement"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-taiwan-procurement.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/taiwan-procurement",
   "pipeworx": {
-    "sourceHash": "v1-7009fa4aa4a537d4bfeddb406154019dadcdc0a360b97af51545b3055b3a6e65",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "taiwan-procurement",
+    "gatewaySlug": "taiwan-procurement",
+    "sourceHash": "v1-9f075972a2db63beef54a73e727928f03a6108a511803e9ba775d07011116f87",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
