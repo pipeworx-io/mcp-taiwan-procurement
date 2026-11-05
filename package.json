@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-taiwan-procurement",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Taiwan Government Procurement MCP — 政府電子採購網 (PCC) tenders (keyless).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "taiwan-procurement",
     "gatewaySlug": "taiwan-procurement",
-    "sourceHash": "v1-9f075972a2db63beef54a73e727928f03a6108a511803e9ba775d07011116f87",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-4600c9fff3d14ad4388e20d76d34106cb52f3e85ab112e4b8352ce985c8b783e",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
